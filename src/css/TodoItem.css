@@ -1,0 +1,23 @@
+.item {
+
+    font-family: "Quicksand", cursive;
+    border: solid white;
+    margin-top: 5rem;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px darkgray;
+}
+.item button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: solid white;
+    
+
+}
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+

@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px darkgray;
+    font-family: "Quicksand", cursive;
+    margin-top: 5rem;
+    border: solid white;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 50%;
+}
+.form input {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+    margin-block: 1rem;
+    transition: 250ms;
+    width: 100%;
+}
+.form button {
+    border: 1px solid white;
+    width: 20%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.btn {
+    text-align: center;
+}
