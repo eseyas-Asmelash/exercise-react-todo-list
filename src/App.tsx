@@ -30,6 +30,12 @@ function App(): ReactElement {
     setTodos(todos.filter(todo => todo.id !== id));
   };
 
+  const editTodo = (id: number, author: string, text: string) => {
+    setTodos(todos.map(todo => 
+      todo.id === id ? { ...todo, author, text } : todo
+    ));
+  };
+
   return (
     <div>
       <nav className='navbar'>
@@ -39,7 +45,7 @@ function App(): ReactElement {
       </nav>
 
       <Routes>
-        <Route path="/" element={<TodoList todos={todos} onToggleComplete={toggleComplete} onDelete={deleteTodo} />} />
+        <Route path="/" element={<TodoList todos={todos} onToggleComplete={toggleComplete} onDelete={deleteTodo} onEdit={editTodo} />} />
         <Route path="/add" element={<AddTodo onAddTodo={addTodo} />} />
         <Route path="/about" element={<About todoUncompleted={todos.filter(todo => todo.completed).length} todoCount={todos.length} />} />
       </Routes>

@@ -1,5 +1,6 @@
 .form {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     box-shadow: 5px 5px 5px darkgray;
     font-family: "Quicksand", cursive;
@@ -22,8 +23,9 @@
     width: 20%;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    margin: 0 1rem;
+    
 }
 .btn {
-    text-align: center;
-    gap: 3rem;
+    row-gap: 3rem;
 }
