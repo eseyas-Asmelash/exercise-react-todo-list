@@ -22,3 +22,22 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
   }
+  .sort {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: start;
+  }
+/*   .sort label {
+    padding-top: 0.5rem;
+    display: inline-block;
+  } */
+  .sort select {
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+    font-family: 'Quicksand', Times, serif;
+    border:0px;
+    outline:0px;
+  }
+  .sort select option {
+    Border: none;
+  }
